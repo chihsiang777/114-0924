@@ -1,0 +1,52 @@
+/*1. reset style */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 28px;
+}
+
+p {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight {
+    color: purple;
+    background-color: yellow;
+    font-style: italic;
+}
+
+#special {
+    color: purple;
+    font-size: italic;
+    font-weight: bold;
+}
+
+xyz {
+    color: orange;
+    background-color: blue;
+    font-size: 20px;
+    border: 2px dashed brown;
+    padding: 5px;
+    display: block;
+    width: fit-content;
+}
+
