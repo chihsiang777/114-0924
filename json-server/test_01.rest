@@ -1,0 +1,56 @@
+@port = 3004
+
+###
+GET http://localhost:{{port}}/menu?category=drink
+
+###
+POST http://localhost:{{port}}/menu
+
+{
+      "category": "drink",
+      "name": "海鹽咖啡",
+      "description": "經典美式咖啡，提神醒腦",
+      "price": 30,
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
+    }
+
+###
+PATCH  http://localhost:{{port}}/menu/94dc
+
+{
+    "price":50
+}
+
+###
+GET http://localhost:{{port}}/comments
+
+###
+GET http://127.0.0.1:{{port}}/todos
+
+
+###
+PUT http://localhost:{{port}}/todos
+Content-Type: application/json
+
+{   "id": 2,
+    "todo": "Figma",
+    "idDone": true
+}
+
+###
+POST http://localhost:{{port}}/todos
+content-type: application/json
+
+{    
+    "todo": "Wordpress",
+    "idDone": false
+}
+
+###
+
+DELETE http://localhost:{{port}}/todos
+Content-Type: application/json
+
+{
+    "id": 1
+}

@@ -1,0 +1,32 @@
+.three-column {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-sidebar {
+    float: left;
+    width: 200px;
+    background-color: #e3f2fd;
+    padding: 20px;
+}
+
+.right-sidebar {
+    float: right;
+    width: 200px;
+    background-color: #f3e5f5;
+    padding: 20px;
+}
+
+.center-content {
+    margin: 0 220px; /* 左右側邊欄寬度 + 間距 */
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.three-column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

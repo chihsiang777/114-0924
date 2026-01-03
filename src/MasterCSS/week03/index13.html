@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style13.css">
+    <title>CSS 固定導航列</title>
+</head>
+<body>
+<div class="modal-demo">
+    <button class="open-modal">開啟對話框</button>
+    
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>對話框標題</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>這是對話框的內容。可以包含任何你想要顯示的資訊。</p>
+                <p>對話框使用固定定位覆蓋整個頁面，並使用高 z-index 確保在最上層。</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">確認</button>
+                <button class="btn btn-secondary close-modal">取消</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <h1>頁面內容</h1>
+        <p>這是頁面的主要內容。當對話框開啟時，這些內容會被遮罩覆蓋。</p>
+    </div>
+</div>
+
+</body>
+</html>

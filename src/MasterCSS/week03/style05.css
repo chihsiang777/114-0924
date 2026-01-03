@@ -1,0 +1,30 @@
+.float-demo {
+    padding: 20px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.float-box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.float-demo p {
+    text-align: justify;
+    line-height: 1.6;
+}
+

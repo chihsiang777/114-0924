@@ -1,0 +1,41 @@
+@port = 3004
+
+###
+GET http://localhost:{{port}}/users
+
+###
+GET http://localhost:{{port}}/posts
+
+###
+GET http://localhost:{{port}}/comments
+
+###
+GET http://127.0.0.1:{{port}}/todos
+
+
+###
+PUT http://localhost:{{port}}/todos
+Content-Type: application/json
+
+{   "id": 2,
+    "todo": "Figma",
+    "idDone": true
+}
+
+###
+POST http://localhost:{{port}}/todos
+content-type: application/json
+
+{    
+    "todo": "Wordpress",
+    "idDone": false
+}
+
+###
+
+DELETE http://localhost:{{port}}/todos
+Content-Type: application/json
+
+{
+    "id": 1
+}
